@@ -1,0 +1,808 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 10px;  /* 세로축 스크롤바 폭 너비 */
+   /* 가로축 스크롤바 폭 너비 */
+}
+출처: https://inpa.tistory.com/entry/CSS-🌟-스크롤-바Scrollbar-꾸미기-속성-총정리 [Inpa Dev 👨‍💻:티스토리]
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body{
+    font:normal 100%/1.2 "pretendard";
+    color: #333;
+    overflow-x:hidden; overflow-y:auto;
+}
+body::-webkit-scrollbar-thumb{
+    background: #c6c5c5;
+    border-radius: 10px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+header{
+    position: relative;
+    height: 121px;
+    background: #000;
+    margin:0 auto;
+    width: 100%;
+}
+header .h1{}
+header .h1 img{
+    position: absolute;
+    left: 10%;
+    top: 28px;
+}
+header nav{
+    position: absolute;
+    top: 65px;
+    left: 20%;
+    z-index: 100;
+}
+header nav .navlist{
+
+    overflow: hidden;
+}
+header nav .navlist > li{
+    float: left;
+}
+header nav .navlist > li > a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 40px;
+}
+header nav .navlist > li .sublist{
+   margin-top: 22px;
+   display: none;
+}
+header nav .navlist > li .sublist > li{
+    background: #333;
+    border: 1px solid #000;
+}
+header nav .navlist > li .sublist > li:hover{
+    background: #000;
+    color: #fff;
+}
+header nav .navlist > li .sublist > li > a{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+header .url1{}
+header .url1 > a{
+    position: absolute;
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    top: 22px;
+    right: 10%;
+
+}
+header .url2{}
+header .url2 > a{
+    position: absolute;
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    top: 44px;
+    right: 10%;
+}
+header .urlset{
+    position: absolute;
+    top: 74px;
+    right: 10%;
+    width: 141px;
+    height: 70px;
+    background: #ffe600;
+    padding: 5px 14px;
+    border-radius: 10px;
+}
+
+.bnWrap{
+    position: relative;
+}
+.banner{
+    position: relative;
+    height: 596px;
+    
+}
+.banner .slide{
+}
+.banner .slide.type1 a{
+    display: block;
+    background: url(../images/slide/slide1.png) no-repeat 0 0;
+    height: 599px;
+    background-size: cover;
+}
+
+.banner .slide.type2 a{
+    display: block;
+    background: url(../images/slide/slide2.png) no-repeat 0 0;
+    height: 609px;
+    background-size: cover;
+}
+.banner .slide.type3 a{
+    display: block;
+    background: url(../images/slide/slide3.png) no-repeat 0 0;
+    height: 595px;
+    background-size: cover;
+}
+.banner .btn{}
+.btn.type1{
+     
+    display: block;
+    background: url(../images/slide/btn1.png) no-repeat 0 0;
+    width: 73px;
+    height: 151px;
+    position: absolute;
+    top: 250px;
+    right: 2%;
+    
+    
+   
+
+    
+    
+}
+.btn.type2{
+    display: block;
+    background: url(../images/slide/btn2.png) no-repeat 0 0;
+    width: 73px;
+    height: 151px;
+    position: absolute;
+    top: 250px;
+    left: 3%;
+}
+
+.mbox1{
+    position: relative;
+    
+}
+.mbox1 .hd2{
+    display: block;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.mbox1 .infoboxset{
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mbox1 .infoboxset > div{
+    display: inline-block;
+    margin-left: 20px;
+}
+.mbox1 .infoboxset:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.mbox1 .infoboxset .infobox1{
+    width: 363px;
+    height: 287px;
+    overflow: hidden;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding-top: 40px;
+}
+.mbox1 .infoboxset .infobox1 img{
+display: block;
+margin: 0 auto;
+}
+.mbox1 .infoboxset .infobox1 .innerbox{
+    height: 91px;
+    width: 100%;
+    background: #000;
+    
+}
+.mbox1 .infoboxset .infobox1 .innerbox .hd3{
+    text-align: center;
+    padding-top: 12px;
+    color: #fff;
+    font-size: 18px;
+}
+.mbox1 .infoboxset .infobox1 .innerbox p{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 7px;
+}
+.mbox1 .infoboxset .infobox2{
+        width: 363px;
+    overflow: hidden;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding-top: 40px;
+}
+.mbox1 .infoboxset .infobox3{}
+
+
+.mset2{
+    margin-top: 40px;
+}
+
+.mset2 h3{
+    font-size: 36px;
+
+    text-align: center;
+    margin-bottom: 50px ;
+    margin-top: 50px;
+}
+
+.mset2 .infoset{
+    width: 1180px;
+    margin-left:auto;
+    margin-right: auto;
+
+    
+    justify-content: space-between;
+}
+.mset2 .infobox a{
+    display: block;
+    width:278px;
+    border:2px solid #000;
+    box-sizing: border-box;
+}
+
+.mset2 .infoset .upmenu{
+    background-color: gold;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mset2 .infoset .upmenu img{
+    
+}
+
+.mset2 .infoset .undermenu{
+    padding:15px;
+    font-size: 14px;
+}
+
+.mset2 .info1 .upmenu{
+    background-image: linear-gradient(to right,#ff0629, #7Ede92);
+    background-size: 170% auto;
+    transition: all 1s;
+    width: 274px;
+}
+
+.mset2 .infobox:hover .upmenu{
+    background-position: -100px 0;
+}
+
+.mset2 .info2 .upmenu{
+    background-image: linear-gradient(to right,#9500fd,#b6d9fd);
+    background-size: 170% auto;
+    transition: all 1s;
+    width: 274px
+}
+.mset2 .info3 .upmenu{
+    background-image: linear-gradient(to right,#c82270,#fff);
+    background-size: 170% auto;
+    transition: all 1s;
+    width: 274px
+}
+.mset2 .info4 .upmenu{
+    background-image: linear-gradient(to right,#000,#fff);
+    background-size: 170% auto;
+    transition: all 1s;
+    width: 274px
+}
+.mset2 .info5 .upmenu{
+    background-image: linear-gradient(to right,#d0a218,#fff);
+    background-size: 170% auto;
+    transition: all 1s;
+    width: 274px
+}
+.mset2 .info6 .upmenu{
+    background-image: linear-gradient(to right,#000,#fff);
+    background-size: 170% auto;
+    transition: all 1s;
+    width: 274px
+}
+
+.mset2 .arrowset{
+    position: absolute;
+    right: 380px;
+    padding-top: 10px;
+}
+.mset2 .arrowset > div{
+    float: left;
+}
+.mset2 .arrowset .btn1{
+
+}
+.mset2 .arrowset .btn2{
+    padding-left: 20px;
+}
+.mset2 .arrowset img:hover{
+    opacity: .5;
+}
+/* 
+
+1. .info1 .upmenu{}
+ .info2 .upmenu{}
+
+ 각각의 백그라운드 그라데이션 넣기
+
+2. 각 infobox내의 a태그 수정하기 
+3. star도 대충 이모지로 때워놓기 
+4. p태그 하나로 통합하기 
+*/
+
+/* .mset2{
+    position: relative;
+    
+}
+.mset2 .mbox{
+    width: 1180px;
+    margin: 0 auto;
+}
+.mset2 .mbox .hd3{
+    margin-top: 20px;
+    font-size: 36px;
+    text-align: center;
+}
+.mset2 .mbox .infoset{
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.mset2 .mbox .infoset > div{
+
+   
+}
+
+.mset2 .mbox .infoset .infobox .upmenu{
+    width: 247px;
+    height: 192px;
+    background-image: linear-gradient(to right, #a5a6cf, transparent);
+    
+}
+.mset2 .mbox .infoset .infobox .upmenu:hover{
+    background-size: 180% 100%;
+    background-position: -89px 0;
+    transition: all 2s;
+}
+.mset2 .mbox .infoset .infobox .upmenu .img1{
+    display: block;
+    width: 212px;
+    height: 132px;
+    
+    position: relative;
+    top: 35px;
+    left: 30px;
+}
+.mset2 .mbox .infoset .infobox .undermenu .id > li > a{
+    padding: 2px;
+    display: block;
+    font-size: 16px;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.mset2 .mbox .infoset .infobox .undermenu .id > li > a > span{
+    float: left;
+}
+.mset2 .mbox .infoset .infobox .undermenu .id > li > a > .tst{}
+.mset2 .mbox .infoset .infobox .undermenu .id > li > a > .star{
+    display: block;
+    background: url(../images/mbox2/star.png);
+    width: 79px;
+    height: 18px;
+    margin-left: 10px;
+    
+}
+
+.mset2 .mbox .infoset .infobox2 .upmenu{
+    width: 247px;
+    height: 192px; 
+    background-image: linear-gradient(to right , #a4aebb , transparent);
+    
+}
+
+.mset2 .mbox .infoset .infobox2 .undermenu{}
+.mset2 .mbox .infoset .infobox2 .undermenu .id{}
+.mset2 .mbox .infoset .infobox2 .undermenu .id > li{}
+.mset2 .mbox .infoset .infobox2 .undermenu .id > li > a{
+    padding: 2px;
+    display: block;
+    font-size: 16px;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.mset2 .mbox .infoset .infobox2 .undermenu .id > li > a > span{
+    float: left;
+}
+.mset2 .mbox .infoset .infobox2 .undermenu .id > li > a > .tst{}
+.mset2 .mbox .infoset .infobox2 .undermenu .id > li > a > .star{
+    display: block;
+    background: url(../images/mbox2/star.png);
+    width: 79px;
+    height: 18px;
+    margin-left: 10px;
+    
+}
+.mset2 .mbox .infoset .infobox2 .undermenu .pset{
+    padding: 10px;
+}
+.mset2 .mbox .infoset .infobox2 .undermenu .pset p{
+    display: block;
+    font-size: 14px;
+}
+.mset2 .mbox .infoset .infobox3{
+    width: 250px;
+    height: 311px;
+    ;
+    border: 2px solid #333;
+}
+.mset2 .mbox .infoset .infobox3 .upmenu{
+    width: 247px;
+    height: 192px;
+    background-image: linear-gradient(to right , #c82270 , transparent);
+    
+}
+.mset2 .mbox .infoset .infobox3 .upmenu .img1{
+    display: block;
+    width: 239px;
+    height: 112px;
+
+    position: relative;
+    top: 40px;
+    left: 12px;
+}
+.mset2 .mbox .infoset .infobox3 .undermenu{}
+.mset2 .mbox .infoset .infobox3 .undermenu .id{}
+.mset2 .mbox .infoset .infobox3 .undermenu .id > li{}
+.mset2 .mbox .infoset .infobox3 .undermenu .id > li > a{
+    padding: 2px;
+    display: block;
+    font-size: 16px;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.mset2 .mbox .infoset .infobox3 .undermenu .id > li > a > span{
+    float: left;
+}
+.mset2 .mbox .infoset .infobox3 .undermenu .id > li > a > .tst{}
+.mset2 .mbox .infoset .infobox3 .undermenu .id > li > a > .star{
+    display: block;
+    background: url(../images/mbox2/star.png);
+    width: 79px;
+    height: 18px;
+    margin-left: 10px;
+    
+}
+.mset2 .mbox .infoset .infobox3 .undermenu .pset{
+    padding: 10px;
+}
+.mset2 .mbox .infoset .infobox3 .undermenu .pset p{
+    display: block;
+    font-size: 14px;
+}
+.mset2 .mbox .infoset .infobox4{
+    width: 250px;
+    height: 311px;
+    ;
+    border: 2px solid #333;
+}
+.mset2 .mbox .infoset .infobox4 .upmenu{
+    width: 247px;
+    height: 192px;
+    background-image: linear-gradient(to right , #000 , transparent);
+    
+}
+.mset2 .mbox .infoset .infobox4 .upmenu .img1{
+    display: block;
+    width: 239px;
+    height: 112px;
+  
+    position: relative;
+    top: 40px;
+    left: 12px;
+}
+.mset2 .mbox .infoset .infobox4 .undermenu{}
+.mset2 .mbox .infoset .infobox4 .undermenu .id{}
+.mset2 .mbox .infoset .infobox4 .undermenu .id > li{}
+.mset2 .mbox .infoset .infobox4 .undermenu .id > li > a{
+    padding: 2px;
+    display: block;
+    font-size: 16px;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.mset2 .mbox .infoset .infobox4 .undermenu .id > li > a > span{
+    float: left;
+}
+.mset2 .mbox .infoset .infobox4 .undermenu .id > li > a > .tst{}
+.mset2 .mbox .infoset .infobox4 .undermenu .id > li > a > .star{
+    display: block;
+    background: url(../images/mbox2/star.png);
+    width: 79px;
+    height: 18px;
+    margin-left: 10px;
+    
+}
+.mset2 .mbox .infoset .infobox4 .undermenu .pset{
+    padding: 10px;
+}
+.mset2 .mbox .infoset .infobox4 .undermenu .pset p{
+    display: block;
+    font-size: 14px;
+} */
+
+.mset3{
+    position: relative;
+
+}
+.mset3 .mbox{
+    width: 1180px;
+    margin: auto;
+}
+.mset3 .mbox .hd3{
+    display: block;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mset3 .mcon{
+    display: flex;
+    margin-top: 30px;
+}
+.mset3 .mbox .subset:first-child{
+    display: flex;
+    width: 70%;
+}
+
+.mset3 .mbox .subset:last-child{
+    width: 35%;
+    background-color: #f6f2f2;
+    
+
+}
+
+.mset3 .mbox .subset:last-child h4{
+    margin-bottom:25px;
+
+}
+
+
+
+.subset h4{
+    display: block;
+    font-size: 22px;
+    padding: 10px;
+    background-color: #f1e4e4;
+}
+.notice{
+    
+}
+.notice li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 5px;
+}
+.notice li:hover a{
+    transform: scale(1.05);
+    transition: all .05s;
+}
+.notice li:hover span{
+    transform: scale(1.05);
+    transition: all .05s;
+}
+.notice li a{
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.notice li span{}
+.mset3 .mbox .subset > div{
+
+}
+.mset3 .mbox .subset .scheimg{
+    background: url(../images/mbox3/img3.png) no-repeat 0 0;
+    width: 60%;
+    height: 100%;
+}
+.mset3 .mbox .subset .infoset{
+    height: 300px;
+    overflow-y: scroll;
+    background-color: #fff;
+   
+
+
+}
+.mset3 .mbox .subset .infoset::-webkit-scrollbar-thumb{
+    background: #f1e4e4;
+    border-radius: 10px;
+    
+}
+
+.mset3 .mbox .subset .infoset .infobox{
+    width: 257px;
+    height: 115px;
+    background-color: #f1e4e4;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    
+    margin-top: 20px;
+}
+.mset3 .mbox .subset .infoset .infobox .pset{
+
+    padding: 13px 30px;
+
+}
+.mset3 .mbox .subset .infoset .infobox .pset p{
+    display: block;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+}
+.mset3 .mbox .subset .infoset .infobox2{
+    width: 257px;
+    height: 115px;
+    background-color: #f1e4e4;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    
+    margin-top: 20px;
+}
+.mset3 .mbox .subset .infoset .infobox2 .pset{
+
+    padding: 13px 30px;
+
+}
+.mset3 .mbox .subset .infoset .infobox2 .pset p{
+    display: block;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+}
+.mset3 .mbox .subset .infoset .infobox3{
+    width: 257px;
+    height: 115px;
+    background-color: #f1e4e4;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+   
+    margin-top: 20px;
+}
+.mset3 .mbox .subset .infoset .infobox3 .pset{
+
+    padding: 13px 30px;
+
+}
+.mset3 .mbox .subset .infoset .infobox3 .pset p{
+    display: block;
+    font-size: 14px;
+    color: #333;
+    padding-top: 0px;
+    line-height: 20px;
+}
+footer{
+    background: #000;
+    padding-top: 1px;
+    
+    
+
+}
+footer .innerbox{
+    width: 1180px;
+    height: 625px;
+    margin: auto;
+    margin-top: 70px;
+}
+footer .innerbox .pset{
+    color: #fff;
+    overflow: hidden;
+}
+footer .innerbox .pset .p1{
+    display: block;
+    font-size: 24px;
+}
+footer .innerbox .pset .p2{
+    display: block;
+    font-size: 18px;
+    margin-top: 30px;
+}
+footer .innerbox .pset .p3{
+    margin-top: 30px;
+}
+footer .innerbox .pset .p3 p{
+    display: block;
+    font-size: 14px;
+    padding-top: 5px;
+    line-height: 25px;
+}
+footer .innerbox .pset .introset{
+    
+position: relative;
+top: -30px;
+left: 950px;
+    
+    
+}
+footer .innerbox .pset .introset > div{
+    float: left;
+
+}
+footer .innerbox .pset .introset .roundimg{
+    display: block;
+    background: url(../images/footer/round.png) no-repeat 0 0;
+    width: 19px;
+    height: 19px;
+}
+footer .innerbox .pset .introset p{
+    display: block;
+    font-size: 14px;
+    
+}
+footer .innerbox .pset select{
+    float: right;
+}
+footer .innerbox .pset .iconset{
+ display: flex;
+ justify-content: center;
+ margin-top: 80px;
+
+}
+footer .innerbox .pset .iconset > div{
+
+}
+footer .innerbox .pset .iconset .icon1{
+    display: block;
+    background: url(../images/footer/icon/icon1.png) no-repeat 0 0;
+    width: 65px;
+    height: 65px;
+}
+footer .innerbox .pset .iconset .icon2{
+    display: block;
+    background: url(../images/footer/icon/icon2.png) no-repeat 0 0;
+    width: 65px;
+    height: 65px;
+    margin-left: 20px;
+}
+footer .innerbox .pset .iconset .icon3{
+    display: block;
+    background: url(../images/footer/icon/icon3.png) no-repeat 0 0;
+    width: 65px;
+    height: 65px;
+    margin-left: 20px;
+}
+footer .innerbox .pset .iconset .icon4{
+    display: block;
+    background: url(../images/footer/icon/icon4.png) no-repeat 0 0;
+    width: 65px;
+    height: 65px;
+    margin-left: 20px;
+}
+footer .innerbox .pset .iconset .icon5{ 
+       display: block;
+    background: url(../images/footer/icon/icon5.png) no-repeat 0 0;
+    width: 65px;
+    height: 65px;
+    margin-left: 20px;
+}
